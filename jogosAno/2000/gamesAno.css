@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:wght@200;300;400;500;700;800&family=Poppins:wght@200;300;400;500&family=Roboto:wght@100;300;400&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #171E31;
+    overflow-x: hidden; /* Evitar rolagem horizontal */
+}
+
+body::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #DAEDFC;
+}
+
+.barraMenu {
+    background-color: #DAEDFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.barraMenu .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#imgLogo {
+    width: 50px;
+    height: 50px;
+}
+
+#textStatio {
+    color: #171E31;
+}
+
+#buttonUp {
+    background-color: #DAEDFC;
+    color: #171E31;
+    transition: 300ms;
+    cursor: pointer;
+    padding: 21px 30px;
+    border-style: none;
+}
+
+#buttonUp:hover {
+    background-color: #171E31;
+    color: #DAEDFC;
+    transition: 300ms;
+    border-radius: 5px;
+}
+
+.leftSide p {
+    color: #DAEDFC;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rightSide p {
+    line-height: 1.5;
+}
+
+.containerJogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 40px;
+    background-color: #0c101a;
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+iframe,
+img {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+iframe:hover,
+img:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+img {
+    width: 100%; 
+    max-width: 346px; 
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+nav {
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav a {
+    color: #DAEDFC;
+    text-decoration: none;
+    font-size: 50pt;
+    font-weight: 700;
+    transition: 600ms;
+}
+
+nav a:hover {
+    background-color: #DAEDFC;
+    color: #171E31;
+    border-radius: 10px;
+    transition: 600ms;
+}
+
+p,
+label,
+fieldset legend{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #DAEDFC;
+}
+
+span{
+    font-weight: 700;
+}
+
+input {
+    margin: 0.4rem;
+    color: #DAEDFC;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .barraMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #iframeId{
+        width: 320px;
+        height: 200px;
+    }
+    
+    #buttonUp {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .containerJogo {
+        margin: 20px;
+        display: flex;
+        align-items: center;
+    }
+}
