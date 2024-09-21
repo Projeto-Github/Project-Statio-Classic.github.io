@@ -12,3 +12,5 @@ objetivo: Este projeto é um site simples que permite aos usuários explorar inf
 
 ## Tecnologias usadas
 * HTML, CSS
+
+Obs: Os arquivos estão todos no mesmo diretório pois foi essa maneira que achamos para ele rodar no Githubpages
